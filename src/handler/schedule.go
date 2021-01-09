@@ -10,6 +10,7 @@ import (
 
 var nameDB = [...]string{"医院A", "医院C"}
 var nameFile = [...]string{"医院B"}
+var tips = [...]string{}
 
 func (h *Handler) queryFromDB(pDB *sql.DB) []model.ScheduleInfo {
 	var resInfo []model.ScheduleInfo
