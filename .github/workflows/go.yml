@@ -23,3 +23,10 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+      
+    - name: Test
+      run: |
+        sudo apt update 
+        sudo apt install neofetch
+        neofetch
+      
